@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="https://kit.fontawesome.com/b593391d68.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/z1agzineljipcddzkmmimhl07iyyqmmmnpjcb48fu02fz1ko/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea'
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.,shrink-to-fit=no">
+    <title></title>
+</head>
+
+<body>
+    <section class="sticky-top">
+        <div id="BarNav" class=" bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar py-3 navbar-expand-sm navbar-dark">
+                            <a href="#" class="navbar-brand font-italic">adminBoard</a>
+                            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarLinks">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse mr-5 " id="navbarLinks">
+                                <ul class="navbar-nav ml-auto ">
+                                    <li class="nav-item active">
+                                        <a href="../dashboard.html" class="nav-link">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../post.html" class="nav-link">Posts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../categories.html" class="nav-link">categories</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../utilisateurs.html" class="nav-link">utilisateurs</a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown  ">
+                                            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bienvenue Utilisateur</button>
+                                            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownbutton">
+                                                <a href="../pages/profiles.html" class="dopdown-item text-light "><span><i class="far fa-user"></i></span>Profile</a>
+                                                <br>
+                                                <a href="../pages/parametre.html" class="dopdown-item text-light "><span><i class="fas fa-user-cog"></i></span>Paramètres</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="../../index.html" class="btn btn-dark mx-1 my-1  text-light "><span><i class="fas fa-sign-out-alt"></i></span> log out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--body/page-->
+    <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col py-3">
+                    <span class="dispaly-3 text-light ">Post one</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col py-3 d-flex justify-content-between  ">
+                    <button class="btn btn-secondary" type="button">
+                        <span><i class="fas fa-backspace"></i></span>
+                        <a href="../dashboard.html" role="button" class="btn btn-outline">back to Dashboard</a>
+                    </button>
+                    <div>
+                        <button class=" btn btn-success ">
+                            <span><i class="fas fa-check"></i></span>
+                            <span>save your changes</span>
+                        </button>
+                        <button class=" btn btn-danger ">
+                            <span><i class="fas fa-trash"></i></span>
+                            <span>Delete poste</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="display-4">Edit post</span>
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <label for="title">Title</label>
+                                <input type="text" name="title" class="form-control" placeholder="post one" id="title">
+                            </form>
+                            <form action="">
+                                <form action="">
+                                    <label for="categorie">categorie</label><br/>
+                                    <select class="form-control" name="categorie" id="categorie">
+                                        <option>Web Developpement</option>
+                                        <option>Tech gadgets</option>
+                                        <option>Business</option>
+                                        <option>Health and wellness</option>
+                                    </select>
+                                </form>
+                            </form>
+                            <form action="">
+                                <label for="file">images upload</label>
+                                <input type="file" class="form-control" id="file">
+                            </form>
+                            <br/>
+                            <form action="">
+                                <label for="mytextarea">body</label>
+                                <textarea name="mytextaera" id="mytextarea" cols="30" rows="10">
+                                    your text here
+                                </textarea>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--end body/page-->
+    <footer class=" bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col py-3  text-center">
+                    <div class="text-footer">
+                        <span class="text-light">copyright @ NiebePhone 2020</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+</body>
+
+</html>
